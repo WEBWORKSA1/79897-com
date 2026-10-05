@@ -1,0 +1,13 @@
+title: "79897"
+description: "China Trade & Prosperity Hub — free sourcing tools, China business calendar, lucky-number pricing and vetted RFQs."
+url: "https://79897.com"
+version: "1"
+markdown: kramdown
+exclude:
+  - README.md
+  - RESEARCH.md
+  - BUILD-PROMPTS.md
+  - scripts
+  - _site
+  - Gemfile
+  - Gemfile.lock
