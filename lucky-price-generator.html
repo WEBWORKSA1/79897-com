@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Lucky Price Generator: Prices Chinese Shoppers Prefer"
+description: "Turn any price into auspicious price points ending in 8, 88, 168 or 888, and filter out unlucky 4s. Free tool for brands selling to Chinese and Chinese-diaspora customers."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="./">Home</a> › <a href="tools.html">Tools</a> › Lucky price generator</p>
+    <h1>Lucky price generator <span class="cn" style="color:var(--verm)">吉祥定价</span></h1>
+    <p class="lead">Western retail ends prices in 9. Chinese retail often ends them in 8, because 八 (bā) sounds like 发 (fā), "to prosper". Enter a price to get the closest auspicious alternatives, ranked.</p>
+  </div>
+</section>
+<section class="section-sm">
+  <div class="container tool-layout">
+    <form id="luckyForm" class="form-card" autocomplete="off">
+      <div class="row">
+        <label>Your price<input name="price" type="number" step="0.01" min="0" value="97"></label>
+        <label>Currency<select name="currency"><option>CNY</option><option>HKD</option><option>TWD</option><option>SGD</option><option>MYR</option><option>USD</option><option>CAD</option><option>AUD</option><option>GBP</option><option>EUR</option></select></label>
+      </div>
+      <label>How far from your price can we move? (±%)<input name="range" type="range" min="3" max="30" value="12" oninput="this.nextElementSibling.textContent='±'+this.value+'%'"><span class="tiny">±12%</span></label>
+      <div class="callout"><b>Quick rules:</b> end in 8 (prosperity) or 9 (longevity), use 6 for "smooth", never 4 (death). Combinations like 168 (一路发, "prosper all the way") and 888 carry premium appeal.</div>
+    </form>
+    <div class="result" id="luckyOut" aria-live="polite"></div>
+  </div>
+</section>
+<div class="container"><div class="ad-slot" data-slot="inArticle" aria-label="Advertisement"></div></div>
+<section class="section-sm">
+  <div class="container narrow prose">
+    <h2>Where lucky pricing matters most</h2>
+    <ul>
+      <li><b>Gifting and festivals:</b> red-envelope amounts (¥88, ¥168, ¥888), mooncake boxes, CNY hampers.</li>
+      <li><b>Weddings:</b> 9 (久, lasting) and pairs (2) are prized. 1314 means "a whole lifetime".</li>
+      <li><b>Premium and luxury:</b> 888 and 8888 signal abundance.</li>
+      <li><b>Real estate and car plates:</b> buyers pay real premiums for 8s and discount 4s.</li>
+    </ul>
+    <p>Read the full guide: <a href="lucky-number-pricing.html">Lucky-number pricing for Chinese buyers →</a></p>
+    <div class="end-cta"><h3>Audit your full price list</h3><p>A bilingual specialist reviews prices, SKUs, names and launch dates for hidden negatives.</p><a class="btn btn-gold" href="get-quotes.html#brand">Request a branding audit →</a></div>
+  </div>
+</section>

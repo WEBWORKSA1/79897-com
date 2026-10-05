@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Freight & CBM Estimator: Sea vs Air vs Express from China"
+description: "Free CBM and chargeable-weight calculator for shipments from China. Compare indicative sea LCL, FCL 20ft/40ft, air and express costs per unit. All rates are editable."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="./">Home</a> › <a href="tools.html">Tools</a> › Freight &amp; CBM estimator</p>
+    <h1>Freight &amp; CBM estimator</h1>
+    <p class="lead">Enter your carton size and weight to get CBM, volumetric weight and an indicative cost per unit by sea, air and express. Then edit the rates to match your forwarder's quote.</p>
+  </div>
+</section>
+<section class="section-sm">
+  <div class="container tool-layout">
+    <form id="freightForm" class="form-card" autocomplete="off">
+      <h3>Cartons</h3>
+      <div class="row3">
+        <label>Length (cm)<input name="l" type="number" min="1" value="60"></label>
+        <label>Width (cm)<input name="w" type="number" min="1" value="40"></label>
+        <label>Height (cm)<input name="h" type="number" min="1" value="40"></label>
+      </div>
+      <div class="row3">
+        <label>Cartons<input name="cartons" type="number" min="1" value="50"></label>
+        <label>Kg per carton<input name="kg" type="number" min="0" step="0.1" value="14"></label>
+        <label>Units per carton<input name="units" type="number" min="1" value="24"></label>
+      </div>
+      <h3 style="margin-top:8px">Indicative rates (USD, edit freely)</h3>
+      <div class="row">
+        <label>Sea LCL per CBM<input name="rLcl" type="number" min="0" value="95"></label>
+        <label>LCL fixed charges<input name="rLclMin" type="number" min="0" value="350"></label>
+      </div>
+      <div class="row">
+        <label>FCL 20ft container<input name="r20" type="number" min="0" value="2400"></label>
+        <label>FCL 40ft container<input name="r40" type="number" min="0" value="3600"></label>
+      </div>
+      <div class="row">
+        <label>Air per chargeable kg<input name="rAir" type="number" min="0" step="0.1" value="5.5"></label>
+        <label>Express per chargeable kg<input name="rExp" type="number" min="0" step="0.1" value="8.5"></label>
+      </div>
+      <p class="form-note">Default rates are rough China-to-North America/Europe placeholders. Freight markets move weekly, so always confirm with a forwarder.</p>
+    </form>
+    <div class="result" id="freightOut" aria-live="polite"></div>
+  </div>
+</section>
+<div class="container"><div class="ad-slot" data-slot="inArticle" aria-label="Advertisement"></div></div>
+<section class="section-sm">
+  <div class="container narrow prose">
+    <h2>The formulas</h2>
+    <ul>
+      <li><b>CBM</b> = L × W × H (cm) ÷ 1,000,000 × number of cartons.</li>
+      <li><b>Air volumetric weight</b> = L × W × H ÷ 6,000 per carton. <b>Express</b> usually divides by 5,000.</li>
+      <li><b>Chargeable weight</b> = whichever is greater, actual or volumetric.</li>
+      <li><b>Containers:</b> a 20ft holds about 28 CBM usable and a 40ft about 58 CBM. Above about 15 CBM, a 20ft FCL often beats LCL.</li>
+    </ul>
+    <h2>Which mode should you choose?</h2>
+    <table><tr><th>Situation</th><th>Usually best</th></tr>
+      <tr><td>Under 2 CBM, urgent samples</td><td>Express (DHL/UPS/FedEx)</td></tr>
+      <tr><td>100–500 kg, launch stock</td><td>Air freight</td></tr>
+      <tr><td>2–15 CBM, not urgent</td><td>Sea LCL</td></tr>
+      <tr><td>15+ CBM</td><td>FCL 20ft / 40ft</td></tr></table>
+    <div class="end-cta"><h3>Want a door-to-door (DDP) price?</h3><p>Partners quote product plus shipping in one price, duties included.</p><a class="btn btn-gold" href="get-quotes.html#source">Get DDP quotes →</a></div>
+    <p>Related: <a href="landed-cost-calculator.html">Landed cost calculator</a> · <a href="glossary.html">Incoterms glossary</a> · <a href="china-business-calendar.html">Factory shutdown calendar</a></p>
+  </div>
+</section>

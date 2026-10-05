@@ -1,0 +1,69 @@
+---
+layout: default
+title: "Landed Cost Calculator: True Cost per Unit for Imports from China"
+description: "Free landed cost calculator. Add factory (FOB) price, freight, insurance, duty, extra tariffs, VAT/GST and fees to see your real cost per unit and the retail price you need."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="./">Home</a> › <a href="tools.html">Tools</a> › Landed cost calculator</p>
+    <h1>Landed cost calculator</h1>
+    <p class="lead">The factory price is only the start. Duty, tariffs, freight and fees often add 30–80%. Find your true cost per unit before you commit to a PO.</p>
+  </div>
+</section>
+<section class="section-sm">
+  <div class="container tool-layout">
+    <form id="landedForm" class="form-card" autocomplete="off">
+      <label>Product (optional)<input name="product" placeholder="e.g. LED desk lamp"></label>
+      <div class="row">
+        <label>Currency<select name="currency"><option>USD</option><option>CAD</option><option>EUR</option><option>GBP</option><option>AUD</option><option>INR</option><option>AED</option><option>SGD</option></select></label>
+        <label>Duty valuation basis<select name="basis"><option value="FOB">FOB value (US, Canada, Australia)</option><option value="CIF">CIF value (EU, UK, India, most others)</option></select></label>
+      </div>
+      <div class="row">
+        <label>Factory price per unit (FOB)<input name="unit" type="number" step="0.01" min="0" value="4.80"></label>
+        <label>Quantity<input name="qty" type="number" min="1" value="1000"></label>
+      </div>
+      <div class="row">
+        <label>Total freight cost<input name="freight" type="number" step="1" min="0" value="650"></label>
+        <label>Cargo insurance %<input name="insurance" type="number" step="0.1" min="0" value="0.5"></label>
+      </div>
+      <div class="row">
+        <label>Import duty %<input name="duty" type="number" step="0.1" min="0" value="6.5"></label>
+        <label>Extra tariffs % (e.g. trade-remedy)<input name="tariff" type="number" step="0.1" min="0" value="0"></label>
+      </div>
+      <div class="row">
+        <label>VAT / GST %<input name="vat" type="number" step="0.1" min="0" value="0"></label>
+        <label>Payment / FX fee %<input name="payfee" type="number" step="0.1" min="0" value="2.5"></label>
+      </div>
+      <div class="row3">
+        <label>Customs broker<input name="broker" type="number" min="0" value="180"></label>
+        <label>Inspection (QC)<input name="qc" type="number" min="0" value="300"></label>
+        <label>Other fees<input name="other" type="number" min="0" value="100"></label>
+      </div>
+      <label>Target gross margin %<input name="margin" type="number" min="0" max="95" value="55"></label>
+      <p class="form-note">Rates differ by HS code and country, and tariffs change often. Check your official customs tariff database before you order.</p>
+    </form>
+    <div class="result" id="landedOut" aria-live="polite"></div>
+  </div>
+</section>
+<div class="container"><div class="ad-slot" data-slot="inArticle" aria-label="Advertisement"></div></div>
+<section class="section-sm">
+  <div class="container narrow prose">
+    <h2>How landed cost is calculated</h2>
+    <p><b>Landed cost = goods + freight + insurance + duty + extra tariffs + import VAT/GST + broker, inspection, payment and other fees.</b> Divide by quantity to get your cost per unit.</p>
+    <ul>
+      <li><b>FOB vs CIF basis.</b> The US, Canada and Australia generally charge duty on the transaction (FOB) value. The EU, UK and many others use CIF, which adds freight and insurance to the duty base.</li>
+      <li><b>Extra tariffs.</b> Some products from China carry additional or trade-remedy duties (for example US Section 301 lists, or anti-dumping duties). These stack on top of normal duty.</li>
+      <li><b>VAT/GST</b> is usually reclaimable for registered businesses, but it still costs you cash flow until you reclaim it.</li>
+      <li><b>Retail at target margin</b> = landed cost ÷ (1 − margin). A 55% gross margin on a $7 landed cost needs about $15.56 retail.</li>
+    </ul>
+    <h2>Rules of thumb</h2>
+    <table><tr><th>Mode</th><th>Typical landed multiple of FOB*</th></tr>
+      <tr><td>Sea freight, heavy/low-value goods</td><td>1.4×–2.0×</td></tr>
+      <tr><td>Sea freight, compact/high-value goods</td><td>1.15×–1.4×</td></tr>
+      <tr><td>Air or express, small parcels</td><td>1.3×–2.5×</td></tr></table>
+    <p class="tiny">*Illustrative ranges only. Your HS code, destination and season decide the real figure.</p>
+    <div class="end-cta"><h3>Get real quotes to plug in</h3><p>Partner agents will quote factory price and DDP shipping for your exact product.</p><a class="btn btn-gold" href="get-quotes.html#source">Get free supplier quotes →</a></div>
+    <h2>Related tools</h2>
+    <p><a href="freight-estimator.html">Freight &amp; CBM estimator</a> · <a href="profit-calculator.html">Profit &amp; MOQ calculator</a> · <a href="currency-converter.html">RMB converter</a> · <a href="lucky-price-generator.html">Lucky price generator</a></p>
+  </div>
+</section>

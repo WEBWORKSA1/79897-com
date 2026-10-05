@@ -1,0 +1,56 @@
+---
+layout: default
+title: "Profit, MOQ & Break-even Calculator for Imported Products"
+description: "Work out net profit per unit, margin, cash needed for your first MOQ and break-even units, including platform fees, fulfilment, ads and returns."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="./">Home</a> › <a href="tools.html">Tools</a> › Profit &amp; MOQ calculator</p>
+    <h1>Profit, MOQ &amp; break-even calculator</h1>
+    <p class="lead">Know whether a product is worth ordering before you pay a deposit. Built for Amazon FBA, Shopify and wholesale sellers.</p>
+  </div>
+</section>
+<section class="section-sm">
+  <div class="container tool-layout">
+    <form id="profitForm" class="form-card" autocomplete="off">
+      <div class="row">
+        <label>Landed cost per unit (USD)<input name="landed" type="number" step="0.01" min="0" value="7.20"></label>
+        <label>Selling price (USD)<input name="price" type="number" step="0.01" min="0" value="24.99"></label>
+      </div>
+      <div class="row">
+        <label>Platform / referral fee %<input name="fee" type="number" step="0.1" min="0" value="15"></label>
+        <label>Fulfilment per unit<input name="fulfil" type="number" step="0.01" min="0" value="4.10"></label>
+      </div>
+      <div class="row">
+        <label>Ad cost per unit sold<input name="ads" type="number" step="0.01" min="0" value="3.00"></label>
+        <label>Returns / refunds %<input name="returns" type="number" step="0.1" min="0" value="3"></label>
+      </div>
+      <div class="row">
+        <label>MOQ (first order units)<input name="moq" type="number" min="1" value="500"></label>
+        <label>One-off costs (samples, moulds, photos)<input name="fixed" type="number" min="0" value="600"></label>
+      </div>
+      <p class="form-note">Don't know your landed cost yet? Use the <a href="landed-cost-calculator.html">landed cost calculator</a> first.</p>
+    </form>
+    <div class="result" id="profitOut" aria-live="polite"></div>
+  </div>
+</section>
+<div class="container"><div class="ad-slot" data-slot="inArticle" aria-label="Advertisement"></div></div>
+<section class="section-sm">
+  <div class="container narrow prose">
+    <h2>Benchmarks to aim for</h2>
+    <ul>
+      <li><b>Net margin of 20%+</b> after all fees and ads. Below that, a single bad batch or a price war erases profit.</li>
+      <li><b>Landed cost at or under 25–30% of retail</b> for marketplace products (the "1/3 rule" or better).</li>
+      <li><b>First order cash at risk</b> you could lose without hurting the business. Negotiate a smaller trial MOQ if needed.</li>
+    </ul>
+    <h2>Five ways to improve the numbers</h2>
+    <ol>
+      <li>Ask for a tiered price: MOQ, 2× MOQ and 5× MOQ.</li>
+      <li>Reduce packaging size to cut CBM and fulfilment tier.</li>
+      <li>Compare 3+ factories. Agents typically find 10–25% spreads.</li>
+      <li>Ship sea LCL instead of air once demand is proven.</li>
+      <li>Test a price point ending in 8 for Chinese-speaking audiences. See the <a href="lucky-price-generator.html">lucky price generator</a>.</li>
+    </ol>
+    <div class="end-cta"><h3>Beat your current unit price</h3><p>Send your product and target price. Partners will try to beat it.</p><a class="btn btn-gold" href="get-quotes.html#source">Get competing quotes →</a></div>
+  </div>
+</section>
