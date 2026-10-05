@@ -1,0 +1,35 @@
+---
+layout: default
+title: "RMB Currency Converter: CNY to USD, EUR, CAD, INR & More"
+description: "Convert Chinese yuan (RMB/CNY) to and from 20 currencies with daily reference rates, plus a lucky-number check on the result."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="./">Home</a> › <a href="tools.html">Tools</a> › RMB converter</p>
+    <h1>RMB currency converter <span class="cn" style="color:var(--verm)">人民币</span></h1>
+    <p class="lead">Supplier quoted in yuan? Convert it in a second, then run a full landed cost.</p>
+  </div>
+</section>
+<section class="section-sm">
+  <div class="container tool-layout">
+    <form id="fxForm" class="form-card" autocomplete="off">
+      <label>Amount<input name="amount" type="number" step="0.01" min="0" value="8888"></label>
+      <div class="row">
+        <label>From<select name="from"><option selected>CNY</option><option>USD</option><option>EUR</option><option>GBP</option><option>CAD</option><option>AUD</option><option>INR</option><option>JPY</option><option>HKD</option><option>SGD</option><option>AED</option><option>MYR</option><option>KRW</option><option>CHF</option><option>NZD</option><option>THB</option><option>VND</option><option>BRL</option><option>MXN</option><option>ZAR</option></select></label>
+        <label>To<select name="to"><option>CNY</option><option selected>USD</option><option>EUR</option><option>GBP</option><option>CAD</option><option>AUD</option><option>INR</option><option>JPY</option><option>HKD</option><option>SGD</option><option>AED</option><option>MYR</option><option>KRW</option><option>CHF</option><option>NZD</option><option>THB</option><option>VND</option><option>BRL</option><option>MXN</option><option>ZAR</option></select></label>
+      </div>
+      <button class="btn btn-ghost btn-sm" id="fxSwap" type="button">⇅ Swap currencies</button>
+      <p class="form-note">Reference rates come from ExchangeRate-API's free daily feed when it's available, with a built-in fallback otherwise. Your bank or payment provider will add a spread, typically 1–3%.</p>
+    </form>
+    <div class="result" id="fxOut" aria-live="polite"></div>
+  </div>
+</section>
+<div class="container"><div class="ad-slot" data-slot="inArticle" aria-label="Advertisement"></div></div>
+<section class="section-sm">
+  <div class="container narrow prose">
+    <h2>CNY vs CNH vs RMB</h2>
+    <p><b>RMB</b> (renminbi) is the currency. <b>Yuan</b> is its unit. <b>CNY</b> is the onshore rate in mainland China, and <b>CNH</b> is the offshore rate traded in Hong Kong and abroad. Suppliers usually quote in USD for export or in CNY for domestic prices. Always confirm which one, and whether 13% VAT is included.</p>
+    <h2>Paying Chinese suppliers</h2>
+    <ul><li>Bank wire (T/T): usually 30% deposit and 70% before shipment.</li><li>Trade-assurance or escrow on B2B platforms.</li><li>Letters of credit for large orders.</li><li>Never pay a personal account that differs from the company name on the contract.</li></ul>
+  </div>
+</section>
